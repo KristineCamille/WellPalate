@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Adobo Recipe</title><!-- Set the title of the webpage -->
+    <link rel="icon" type="image/png" href="/body/logo-icon1.png" />
+    <link rel="stylesheet" href="/body/meat-recipes.css"><!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="/body/review.css">
+    <link rel="stylesheet" href="/body/video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<header>
+         <!-- USED TO ADD NAVIGATION BARS THAT ARE LINKED TO OTHER PAGE. -->
+    <div class="topnav">
+        <a href="/index.html" class="logo-link">
+            <img src="/body/LOGO.png" class="logo">
+        </a>
+        <a href="/index.html">Home</a>
+        <a href="/body/categories.html">Categories</a>
+        <a href="/body/suggestion.html">Suggestion</a>
+        
+      </div>
+</header>
+<!-- section with the recipe title and an image -->
+<h1>CHICKEN ADOBO</h1>
+<div class="slideshow-container">
+    <img id="slide" width="500" height="300">
+</div>
+<script>
+    var p= 0;
+    var images= ['/body/picture/MEAT/adobo-top.png', '/body/picture/MEAT/adobo-top.1.png', '/body/picture/MEAT/adobo-top.2.png'];
+    var time= 4000;
+
+
+    function changeImg() {
+    var slide = document.getElementById('slide');
+    
+    slide.style.opacity = 0; // Set opacity to 0 for fade-out effect
+    
+    setTimeout(function() {
+      slide.src = images[p];
+      slide.style.opacity = 1; // Set opacity to 1 for fade-in effect
+    }, 300); // Adjust the duration as needed
+
+    if (p < images.length - 1) {
+      p++;
+    } else {
+      p = 0;
+    }
+
+    setTimeout(changeImg, time);
+  }
+
+  window.onload = changeImg;
+</script>
+<div style="text-align:center">
+    <span class="dot1"></span> 
+    <span class="dot2"></span> 
+    <span class="dot3"></span> 
+  </div>
+
+<body>
+        <section id="adobo-description">
+            <p align="justify"><!-- Paragraph describing the Chicken Adobo dish -->
+                Chicken adobo is a typical 
+                Filipino dish that showcases the perfect
+                harmony of flavors. Pieces of chicken are 
+                marinated and simmered in a rich blend
+                of soy sauce, sugar, vinegar, calamansi,
+                garlic, bay leaves, and black pepper, The
+                process of marinate and slow-cooking 
+                allows the flavor to be absorbed by the 
+                chicken, resulting in a rich, tender, and 
+                aromatic dish. This recipe is good for 4 
+                to 5 people and is easy to prepare. So,
+                grab thos ingredients, turn up the 
+                excitement, and let the adobo magic unfold!
+            </p>
+        </section>
+        <section id="adobo-ingredients">
+            <h4>INGREDIENTS:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+            <img src="/body/picture/MEAT/Chicken adobo-2.jpg" class="ingredients">
+            
+            <!-- List of ingredients for Chicken Adobo -->
+            <ul class="list-ingredients">
+                <li>1kg chicken</li>
+                <li>2 tbsp oil</li>
+                <li>2-3 calamansi</li>
+                <li>5 garlic cloves</li>
+                <li>1 onion</li>
+                <li>2 tablespoon vinegar</li>
+                <li>1/4 cup soysauce</li>
+                <li>1 cup water</li>
+                <li>5 pcs bay leave</li>
+                <li>2 teaspoon sugar</li>
+            </ul>
+        </section>
+        <section id="adobo-procedures" align="justify">
+            <h4>PROCEDURES:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+            <!-- List of cooking procedures for Chicken Adobo -->
+            <ol align="justify">
+                <li>Marinate the chicken with soysauce,
+                    garlic, pepper, bay leaves, and 
+                    calamansi for 1-2 hours.
+                </li>
+                <li>Saute the onion, garlic, and marinated
+                    chicken, for 5-8 mins or until the chicken
+                    is medium brown.
+                </li>
+                <li>Once the chicken is tender, add the water, 
+                    sugar, pepper, bay leaves, and additonal soysauce.
+                    Let it boil for another 5-8 mins before adding vinegar.
+                </li>
+                <li>After adding vinegar, make sure not to stir.
+                    Let simmer for 5 mins and taste.
+                </li>
+            </ol>
+        </section>
+        <div class="video">
+        <video controls src = "/body/Videos/adobo-vid.mp4" width = "500" class="video-procedures"></video>
+        <a href="https://youtu.be/wwapBsT0oc8?si=ZjAHWFycTZeNF7Ss">&copy;RecipeTinEats</a>
+</div>
+        <section id="adobo-nutrients">
+            <h4>NUTRIENT FACTS:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+            <table border="1" cellpadding="10">
+
+                <tr>
+                    <th>Calories</th>
+                    <td>&nbsp;224 kcal</td>
+                </tr>
+                <tr>
+                    <th>Carbohydrates</th>
+                    <td>&nbsp;4.96g</td>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <td>&nbsp;23.76g</td>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <td>9.85g</td>
+                </tr>
+                <tr>
+                    <th>Sodium</th>
+                    <td>1508.8mg</td>
+                </tr>
+                <tr>
+                    <th>Sugar</th>
+                    <td>0</td>
+                </tr>
+            </table>
+        </section>
+            <br> <br> <br> <br> <br> <br>
+            <form>
+                <h2><center>Rate this recipe and leave us a comment!</center> </h2>
+                <div class="rating">
+                   <input type="radio" name="star" id="star1">
+                   <label for="star1">★</label>
+                   <input type="radio" name="star" id="star2">
+                   <label for="star2">★</label>
+                   <input type="radio" name="star" id="star3">
+                   <label for="star3">★</label>
+                   <input type="radio" name="star" id="star4">
+                   <label for="star4">★</label>
+                   <input type="radio" name="star" id="star5">
+                   <label for="star5">★</label>
+                 </div>
+                 <input type="text" required placeholder="Enter your name" class="name-box">
+                 <input type="email" placeholder="Enter your email" class="email-box">
+                 <div class="comment">
+                 <textarea class="opinion" rows="8" cols="53" placeholder="Write your comment......"></textarea>
+                 </div>
+            <!--LINE OF CODE FROM SUBMIT BUTTON-->
+            <center><input type="submit" value="Submit" id="submit"></center> 
+          </form>
+          <div class="comment-1">
+          <p class="name">Alyssa S.</p>
+          <p class="date">November 25, 2023</p>
+          <div class="star-rating-five">
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+        </div>
+        <p class="comment-ni-beh">This recipe is really easy to follow! I love it!</p>
+    </div>
+    <div class="comment-next">
+        <p class="name">Cedric S.</p>
+        <p class="date">October 5, 2023</p>
+        <div class="star-rating-five">
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+        </div>
+        <p class="comment-ni-beh">Amazing!! My family wants the sauce for everything now. 
+            Best meal I’ve tried in a while and far better than the pork adobo I found on another site.</p>
+    </div>
+    <div class="comment-next">
+        <p class="name">Ken C.</p>
+        <p class="date">Novermber 8, 2023</p>
+        <div class="star-rating-five">
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+        </div>
+        <p class="comment-ni-beh">Thank you so much! This recipe helped me with my cooking project. </p>
+    </div>
+    
+<footer id="main-footer"> 
+    <img src="/body/LOGO.png" width="14%" class="logo-about"> 
+    <hr size="3px" color="#664229">
+    <div class="more">
+<p class="left">Explore the diverse flavors of dishes with <b>WellPalate </b>— your online kitchen companion!</p>
+</div>
+<div class="middle">
+    <p><a class="foot-button" href="/index.html">Home</a> </p>
+    <p><a class="foot-button" href="/body/categories.html"> Categories</a></p>
+    <p><a class="foot-button" href="/body/suggestion.html"> Suggestion Form</a></p>
+</div>
+<div class="right">
+    <p>Contact us:</p>
+    <a href="#" class="fa fa-phone"></a><p class="pnumber">+63 935 756 0201</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-envelope"></a>
+    </div>
+</div>
+</footer>
+</body>
+</html>

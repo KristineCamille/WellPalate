@@ -1,0 +1,28 @@
+
+.video{
+    align-items: center;
+    
+    
+}
+
+.video-procedures{
+    margin-top: 5px;
+    margin-left: 510px;
+    margin-bottom: 5px;
+    padding: auto;
+    background-color:  hsla(113, 27%, 54%, 0.247);
+    box-shadow: 15px 15px 15px 0 hsla(113, 27%, 54%, 0.247);
+    align-items: center;
+}
+
+.video a{
+    text-decoration: none;
+    color: gray;
+    font-family: Libre Baskerville;
+    font-size: 12px;
+    margin-left: 510px;
+    
+}
+.video a:hover{
+    color: black;
+}

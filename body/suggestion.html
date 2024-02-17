@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Form</title>
+    <link rel="icon" type="image/png" href="/body/logo-icon1.png" />
+    <link rel="stylesheet" href="/body/suggestions.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/body/suggestion.js"></script>
+  
+</head>
+<header>
+     <!-- USED TO ADD NAVIGATION BARS THAT ARE LINKED TO OTHER PAGE. -->
+    <div class="topnav">
+        <a href="/index.html" class="logo-link">
+            <img src="/body/LOGO.png" class="logo">
+        </a>
+        <a href="/index.html" class="home">Home</a>
+        <a href="/body/categories.html">Categories</a>
+        <a href="/body/suggestion.html" class="suggestion">Suggestion</a>
+      </div>
+</header>
+<body>
+    <h1> SUGGESTION FORM:</h1> 
+   
+    <!--Short description about the form-->
+    <p class="descri">Welcome to our suggestion section! Just fill out the form below, and we'll be eager to hear your thoughts. 
+        Whether it's an idea, a request, or a suggestion, your input is vital. Together, let's make this platform 
+        more tailored to your needs. 
+        Thank you for taking the time to share your ideas with us! </p>
+<br><br><br>
+        
+        <form>
+            <div class="container-form">
+                <br>
+          Enter your name: <input type="text" placeholder="Enter your name" class="name-box">
+      <br> <br>
+      Enter your email: <input type="email" placeholder="Enter your email" class="email-box">
+      <br> <br>
+      Categories: <select> <!--Enables users to select the category for their dish-->
+          <option>Meat</option>
+          <option>Salad</option>
+          <option>Dessert</option>
+          <option>Diabities-Friendly</option>
+          <option>Renal-Friendly</option>
+          <option>Heart-Healthy</option>
+      </select>
+      <br>
+      <br>
+      <!--Enable users to freely type their ingredients and procedures-->
+      Name of your dish: <input type="text" required placeholder="" class="dish-box">
+      <br>
+      <br>
+      <!--BOOTSTRAP-->
+      Picture of the dish: <div class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      </div>
+     
+      <br>
+      <label>Ingredients:</label>
+      <br>
+      <br>
+      <textarea name="ingredients" rows="15" cols="90"></textarea>
+      <br>
+      <br>
+      <label>Procedure:</label>
+      <br>
+      <br>
+      <textarea name="procedure" rows="15" cols="90"></textarea>
+      <br>
+
+      <!--Submit and reset button-->
+     <center><button class="btn" onclick="showConfirmBox()">Submit</button>
+      <input onclick="reset()" type="reset" value="Reset"/></center> 
+      <br><br>
+    </div>
+      </form>
+    <br>
+    
+
+    <footer id="main-footer"> 
+        <img src="/body/LOGO.png" width="14%" class="logo-about"> 
+        <hr size="3px" color="#664229">
+        <div class="more">
+    <p class="left">Explore the diverse flavors of dishes with <b>WellPalate </b>— your online kitchen companion!</p>
+    </div>
+    <div class="middle">
+            <p><a class="foot-button" href="/index.html">Home</a> </p>
+            <p><a class="foot-button" href="/body/categories.html"> Categories</a></p>
+            <p><a class="foot-button" href="/body/suggestion.html"> Suggestion Form</a></p>
+    </div>
+    <div class="right">
+        <p>Contact us:</p>
+        <a href="#" class="fa fa-phone"></a><p class="pnumber">+63 935 756 0201</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

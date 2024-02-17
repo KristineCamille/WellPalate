@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta tags for character set and viewports-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and external stylesheet-->
+    <title>Mango Float Recipe</title>
+    <link rel="icon" type="image/png" href="/body/logo-icon1.png" />
+    <link rel="stylesheet" href="/body/dessert-recipes.css">
+    <link rel="stylesheet" href="/body/review.css">
+    <link rel="stylesheet" href="/body/video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<header>
+    <!-- USED TO ADD NAVIGATION BARS THAT ARE LINKED TO OTHER PAGE. -->
+    <div class="topnav">
+        <a href="/index.html" class="logo-link">
+            <img src="/body/LOGO.png" class="logo">
+        </a>
+        <a href="/index.html">Home</a>
+        <a href="/body/categories.html">Categories</a>
+        <a href="/body/suggestion.html">Suggestion</a>
+      </div>
+</header>
+<!--Main title/heading with image-->
+ <h1>MANGO FLOAT</h1>
+
+ <div class="slideshow-container">
+    <img id="slide" width="500" height="300">
+</div>
+<script>
+    var p= 0;
+    var images= ['/body/picture/DESSERT/mango-float-head1.jpg', '/body/picture/DESSERT/mango-float-head2.jpg', '/body/picture/DESSERT/mango-float-head3.jpg'];
+    var time= 4000;
+
+
+    function changeImg() {
+    var slide = document.getElementById('slide');
+    
+    slide.style.opacity = 0; // Set opacity to 0 for fade-out effect
+    
+    setTimeout(function() {
+      slide.src = images[p];
+      slide.style.opacity = 1; // Set opacity to 1 for fade-in effect
+    }, 300); // Adjust the duration as needed
+
+    if (p < images.length - 1) {
+      p++;
+    } else {
+      p = 0;
+    }
+
+    setTimeout(changeImg, time);
+  }
+
+  window.onload = changeImg;
+</script>
+<div style="text-align:center">
+    <span class="dot1"></span> 
+    <span class="dot2"></span> 
+    <span class="dot3"></span> 
+  </div>
+  
+<body>
+    <!--Mango description section-->
+    <section id="mango-description">
+        <p align="justify">
+            Mango Graham Cake is a no-bake Filipino dessert that combines layers of graham crackers, sweetened 
+            mangoes, and a cream filling.  It's a rollercoaster of flavors – the mango brings a burst of tropical 
+            sweetness, the whipped cream adds a creamy cloud, and the graham crackers bring a satisfying crunch. 
+            Every bite is a journey into a world of textures and tastes that make your taste buds do a happy dance.
+            It's a delightful and easy-to-make treat that's perfect for any occasion, 
+            especially during hot summer days.
+        </p>
+    </section>
+    <!--Mango graham cake ingredients section-->
+    <section id="mango-ingredient">
+        <h4>INGREDIENTS:</h4>
+        <hr class="moving" size="10" color=" #664228;">
+        <img src="/body/picture/DESSERT/mango-graham-2.jpg" class="ingredients">
+
+        <!--Unordered list of ingredients section-->
+        <ul class="list-ingredients">
+            <li>2 ripe mangoes, sliced</li>
+            <li>2 packs graham crackers</li>
+            <li>2 cans (14 oz each) sweetened condensed milk</li>
+            <li>2 packs (8 oz each) all-purpose cream</li>
+            <li>1 teaspoon vanilla extract</li>
+        </ul>
+    </section>
+    <!--Mango graham cake procedure section-->
+    <section id="mango-procedure">
+        <h4>PROCEDURES:</h4>
+        <hr class="moving" size="10" color=" #664228;">
+        <!-- Ordered list of procedure section-->
+        <ol>
+            <li>In a bowl, combine the sweetened condensed milk, 
+                all-purpose cream, and vanilla extract. 
+                Mix until well incorporated.
+            </li>
+            <li>In a rectangular dish, layer graham crackers at the bottom.</li>
+            <li>Spread a portion of the cream mixture over the graham crackers, 
+                then add a layer of sliced mangoes.
+            </li>
+            <li>Repeat the layers until you reach the desired height, 
+                finishing with a layer of cream on top.
+            </li>
+            <li>Refrigerate for at least 4 hours or overnight to allow 
+                the flavors to meld together.
+            </li>
+        </ol>
+    </section>
+    <div class="video">
+        <video controls src = "/body/Videos/mangoFloat-video.mp4" width = "500" class="video-procedures"></video>
+        <a href="https://youtu.be/rlDQ3QKSTqo?si=2SEZzO4PXlkIvpMF">&copy;Cooking Satisfaction</a>
+</div>
+    <!--Mango graham cake nutrition section-->
+    <section id="mango-nutrient">
+        <h4>NUTRIENT FACTS:</h4>
+        <hr class="moving" size="10" color=" #664228;">
+        <table border="1" cellpadding="10">
+            <!--Rows and columns with nutrients information-->
+            <tr>
+                <th>Calories</th>
+                <td>&nbsp;220 kcal</td>
+            </tr>
+            <tr>
+                <th>Carbohydrates</th>
+                <td>&nbsp;35g</td>
+            </tr>
+            <tr>
+                <th>Protein</th>
+                <td>&nbsp;4g</td>
+            </tr>
+            <tr>
+                <th>Fat</th>
+                <td>7g</td>
+            </tr>
+            <tr>
+                <th>Sodium</th>
+                <td>85mg</td>
+            </tr>
+            <tr>
+                <th>Sugar</th>
+                <td>27g</td>
+            </tr>
+            <tr>
+                <th>Cholesterol</th>
+                <td>25mg</td>
+            </tr>
+        </table>
+    </section>
+    <br> <br> <br> <br> <br> <br>
+    <!--CODE FOR EMOJI RATINGS-->
+    <form>
+        <h2><center>Rate this recipe and leave us a comment!</center> </h2>
+        <div class="rating">
+           <input type="radio" name="star" id="star1">
+           <label for="star1">★</label>
+           <input type="radio" name="star" id="star2">
+           <label for="star2">★</label>
+           <input type="radio" name="star" id="star3">
+           <label for="star3">★</label>
+           <input type="radio" name="star" id="star4">
+           <label for="star4">★</label>
+           <input type="radio" name="star" id="star5">
+           <label for="star5">★</label>
+         </div>
+         <input type="text" required placeholder="Enter your name" class="name-box">
+         <input type="email" placeholder="Enter your email" class="email-box">
+         <div class="comment">
+         <textarea class="opinion" rows="8" cols="53" placeholder="Write your comment......"></textarea>
+         </div>
+    <!--LINE OF CODE FROM SUBMIT BUTTON-->
+    <center><input type="submit" value="Submit" id="submit"></center> 
+  </form>
+  <div class="comment-1">
+    <p class="name">Alyssa S.</p>
+    <p class="date">August 4, 2023</p>
+    <div class="star-rating-five">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+  </div>
+  <p class="comment-ni-beh">This was very easy and delicious! Our favorite Filipino dessert. Thanks for the recipe!</p>
+</div>
+<div class="comment-next">
+    <p class="name">Jane P.</p>
+    <p class="date">September 10, 2023</p>
+    <div class="star-rating-five">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+  </div>
+  <p class="comment-ni-beh">I just love mangos. Especially during the summer. Definitely giving this recipe a try. 
+    I bet the family would love it.</p>
+</div>
+<div class="comment-next">
+    <p class="name">Renz R.</p>
+    <p class="date">September 28, 2023</p>
+    <div class="star-rating-five">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+  </div>
+  <p class="comment-ni-beh">It is so easy and fast to do. Perfect for celebrations!</p>
+</div>
+<div class="comment-next">
+    <p class="name">Cecil H.</p>
+    <p class="date">October 17, 2023</p>
+    <div class="star-rating-five">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+  </div>
+  <p class="comment-ni-beh">Grabe, winner yung mango graham cake! Easy steps lang, pero shala ng lasa!</p>
+</div>
+<div class="comment-next">
+    <p class="name">Alfred J.</p>
+    <p class="date">October 17, 2023</p>
+    <div class="star-rating-five">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+  </div>
+  <p class="comment-ni-beh">Solid ng mango graham cake! Easy lang gawin pero feeling chef ako sa sarap!</p>
+</div>
+<footer id="main-footer"> 
+    <img src="/body/LOGO.png" width="14%" class="logo-about"> 
+    <hr size="3px" color="#664229">
+    <div class="more">
+<p class="left">Explore the diverse flavors of dishes with <b>WellPalate </b>— your online kitchen companion!</p>
+</div>
+<div class="middle">
+        <p><a class="foot-button" href="/index.html">Home</a> </p>
+        <p><a class="foot-button" href="/body/categories.html"> Categories</a></p>
+        <p><a class="foot-button" href="/body/suggestion.html"> Suggestion Form</a></p>
+</div>
+<div class="right">
+    <p>Contact us:</p>
+    <a href="#" class="fa fa-phone"></a><p class="pnumber">+63 935 756 0201</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+    </div>
+</footer>
+</body>
+</html>

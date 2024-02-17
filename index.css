@@ -1,0 +1,270 @@
+
+.description{
+ width: 1300px;
+ padding: 100px;
+ display: flex;
+ color: #664229;
+}
+
+.description-bottom{
+    font-size: 90px;
+    font-weight: 500px;
+    font-family: 'Rubik Mono One';
+    margin-left: 150px;
+    margin-top: 0px;
+    color: #664229;
+    text-shadow: 10px 5px #45494263;
+    padding-bottom: 20px; 
+}
+.description-top{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: relative;
+    border-bottom: 7px solid #4C6444; 
+    padding-bottom: 25px;
+    top: 100px;
+    margin-right:600px;
+    text-align: justify;
+    margin-left: 50px; 
+}
+.logo{
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+    left: 80px;
+    
+}
+
+.Main{
+  
+    background-image: url(/body/hompage\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   padding-bottom: 20px;
+}
+.about-us{
+    padding-top: 20px;
+    font-family: Montserrat;
+    line-height: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+/*For styling the slideshow*/
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.homepage-slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:  #66825D;
+}
+
+/* Caption text */
+.des {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Montserrat;
+  text-shadow: 2px 2px rgb(102, 66, 41);
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: hsla(113, 27%, 54%, 0.247);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #66825D;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+h1{
+    font-family: Libre Baskerville;
+    font-size: 70px;
+    letter-spacing: 20px;
+    margin-bottom: 0;
+}
+
+h4{
+ font-family: Libre Baskerville;
+ font-size: 35px;  
+ margin-left: 150px;
+ color: #664229; 
+ font-style: italic;
+ margin-bottom: 0;
+ margin-top: 30px;
+}
+body a.mail {
+  text-decoration: none;
+  color: #664229
+}
+
+body a.mail:hover {
+  text-decoration: underline;
+}
+/*Style for the list or answers to FAQS*/
+ul{
+    font-family: Montserrat;
+    line-height: 25px;
+    margin-left: 190px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-align: justify; 
+    line-height: 1.8;
+}
+/*Style for the bottom part of the page*/
+
+  .ABOUT{
+    background-color:  hsla(113, 27%, 54%, 0.247);
+  }
+ 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#main-footer{
+  background-color: white;
+    padding: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+  .fa{
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 20px;
+    height: 15px;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width: 20px;
+    height: 15px;
+  }
+  .fa-envelope{
+    background: red;
+    color: white;
+    width: 20px;
+    height: 15px;
+  }
+  .fa-instagram{
+    background: #cd486bbd ;
+    color: white;
+    width: 20px;
+    height: 15px;
+  }
+  .fa-phone{
+    
+    color:#4C6444;
+    width: 40px;
+    height: 30px;
+    margin-left: 25px;
+  }
+  .logo-about{
+    margin-top: -30px; 
+  }
+  .left{
+    padding-right: 1050px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: Libre Baskerville;
+  }
+  .middle{
+    margin-top: -60px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Libre Baskerville;
+  }
+  .right{
+    padding-left: 1150px;
+    margin-top: -110px;
+    font-size: 15px;
+    font-family: Libre Baskerville;
+    line-height: 50px;
+  }
+  .foot-button{
+    text-decoration: none;
+    color: black;
+  }
+  .foot-button:hover{
+    color: #6642296b;
+  }
+  .pnumber{
+    margin-top: -75px;
+    margin-left: 80px;
+  }
+  
+  
+
+
+
+

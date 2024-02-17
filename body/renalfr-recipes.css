@@ -1,0 +1,377 @@
+/*Styling for the h1.main heading*/
+h1{
+    background-color: #664229;
+    color: white;
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 50px;
+
+}
+.slideshow-container{
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  z-index: -1;
+}
+#slide {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 1; 
+  transition: opacity 1.5s ease;
+}
+.dot1, .dot2, .dot3 {
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  animation: colorChange 5s infinite;
+}
+
+.dot2 {
+  animation-delay: 3s;
+}
+
+.dot3 {
+  animation-delay: 5s;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    background-color: #bbb;
+  }
+  50% {
+    background-color: #717171;
+  }
+}
+/*Style for the subheadings*/
+h4{
+    font-family: Libre Baskerville;
+    letter-spacing: 5px;
+    color:#66825D;
+    font-size: 20px; 
+    margin-bottom: auto;  
+}
+h3{
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+  color: black;
+  }
+.moving {
+    width: 15%; /* Set the initial width to 20% */
+    margin-left: 0%; /* Set the initial margin-left to push it to the left */
+    transition: width .5s; /* Add a transition to the width property for a smooth effect */
+  }
+  
+.moving:hover {
+    width: 30%; /* Set the width on hover to extend the hr to the right */
+  }
+  
+body{
+    background-color: rgba(250, 236, 215, 0.658);
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients{
+  width: 38%;
+  height: 290px;
+  margin-left: 370px ;
+  margin-top: -20px;
+  padding: auto;
+  background-color:  hsla(113, 27%, 54%, 0.247);
+  box-shadow: 10px 10px 10px 0 hsla(113, 27%, 54%, 0.247);
+}
+.ingredients2{
+  width: 35%;
+  height: 290px;
+  margin-left: 700px ;
+  margin-top: -20px;
+  padding: auto;
+  background-color:  hsla(113, 27%, 54%, 0.247);
+  box-shadow: 10px 10px 10px 0 hsla(113, 27%, 54%, 0.247);
+}
+.ingredients3{
+  width: 35%;
+  height: 280px;
+  margin-left: 700px ;
+  margin-top: -20px;
+  padding: auto;
+  background-color:  hsla(113, 27%, 54%, 0.247);
+  box-shadow: 10px 10px 10px 0 hsla(113, 27%, 54%, 0.247);
+}
+.list-ingredients{
+  font-family: Montserrat;
+  margin-top: -260px;
+  margin-bottom: 70px;
+}
+/*Style for the description, ingredients, procedures, and nutrient content*/
+section{
+    font-family: Montserrat;
+    line-height: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+}
+
+.logo{
+    width: 60%;
+    margin-top: -10px;
+    margin-right: 500px;
+}
+/* Styling for topnav and its links */
+.topnav a.logo-link{
+    margin-top: 0;
+    margin-right: 350px;
+    background-color: transparent;
+}
+.topnav a.logo-link:hover{
+    background-color: transparent;
+}
+.topnav{
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    margin-left: auto;
+    
+}
+.topnav a {
+    background-color: #66825D;
+    border-radius: 50px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 5%;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #664229;
+    color: white;
+
+  }
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  /*Style for the ratings content*/
+  .name-box{
+    width: 13%;
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border-radius: 10px;
+    padding: .8%;
+    margin-left: 517px;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border: 2px solid #66825D;
+  }
+  .email-box{
+  width: 13%;
+  background-color: hsla(113, 27%, 54%, 0.247);
+  border: none;
+  padding: .8%;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid #66825D;
+  }
+  textarea{
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: 2px solid #66825D;
+    border-radius: 10px;
+    font-size: 16px;
+    justify-content: center;
+    text-indent: 15px;
+    
+  }
+  .comment{
+  text-align: center;
+  }
+  .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding-bottom: 10px;
+  
+  }
+  
+  .rating input {
+  display: none;
+  }
+  
+  .rating label {
+  font-size: 50px;
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 5px;
+  }
+  
+  .rating input:hover ~ label, 
+  .rating input:checked ~ label
+  {
+  color: #66825D;
+  }
+  /* Styling for submit button */
+  input[type=submit]{
+    background-color: #664229;
+    color: white;
+    padding: 10px;
+    font-family: Montserrat;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    
+  }
+  input[type=submit]:hover {
+   background-color: #66825D; 
+   filter: brightness(1.5);
+    
+  }
+  .star-rating-five label:before {
+    content: '★';
+    color: #66825D;
+  }
+  .star-rating-five{
+    font-size: 25px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .comment-1{
+    margin-top: 30px;
+    margin-left: 500px;
+    line-height: 20px;
+    border-top: 2px solid #66825d5e; 
+    border-bottom: 2px solid #66825d5e;
+    width: 38%;
+  }
+  .date{
+    margin-left: 110px;
+    margin-top: -38px;
+    font-family: Montserrat;
+    font-size: 15px;
+  }
+  .name{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .comment-ni-beh{
+    font-family: Montserrat;
+  }
+  .comment-next{
+    border-bottom: 2px solid #66825d5e;
+    width: 38%;
+    margin-left: 500px;
+    line-height: 20px;
+  }
+  .star-rating-four{
+    font-size: 25px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .star-rating-four label:before {
+    content: '★';
+    color: #66825D;
+  }
+  .star-rating-four label.unfilled-star:before{
+    content: '★';
+    color: #454242;
+  }
+  #main-footer{
+    background-color: hsla(113, 27%, 54%, 0.247);
+    padding: 50px;
+    padding-bottom: 30px;
+    margin-top: 120px;
+      }
+      .fa{
+        padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+        width: 20px;
+        height: 15px;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        width: 20px;
+        height: 15px;
+      }
+      .fa-envelope{
+        background: red;
+        color: white;
+        width: 20px;
+        height: 15px;
+      }
+      .fa-instagram{
+        background: #cd486bbd ;
+        color: white;
+        width: 20px;
+        height: 15px;
+      }
+      .fa-phone{
+        
+        color:#4C6444;
+        width: 40px;
+        height: 30px;
+        margin-left: 25px;
+      }
+      .logo-about{
+        margin-top: -30px; 
+      }
+      
+      .left{
+        padding-right: 1050px;
+        margin-top: 25px;
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: justify;
+        font-family: Libre Baskerville;
+      }
+      .middle{
+        margin-top: -60px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Libre Baskerville;
+      }
+      .right{
+        padding-left: 1150px;
+        margin-top: -110px;
+        font-size: 15px;
+        font-family: Libre Baskerville;
+        line-height: 50px;
+      }
+      .foot-button{
+        text-decoration: none;
+        color: black;
+      }
+      .foot-button:hover{
+        color: #6642296b;
+      }
+      .pnumber{
+        margin-top: -75px;
+        margin-left: 80px;
+      }

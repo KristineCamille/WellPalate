@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinach Carbonara Recipe</title><!--Title for the webpage-->
+    <link rel="icon" type="image/png" href="/body/logo-icon1.png" />
+    <link rel="stylesheet" href="/body/renalfr-recipes.css"><!-- Link to external CSS file -->
+    <link rel="stylesheet" href="/body/review.css">
+    <link rel="stylesheet" href="/body/video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"><!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<header>
+ <!-- USED TO ADD NAVIGATION BARS THAT ARE LINKED TO OTHER PAGE. -->
+ <div class="topnav">
+    <a href="/index.html" class="logo-link">
+        <img src="/body/LOGO.png" class="logo">
+    </a>
+    <a href="/index.html">Home</a>
+    <a href="/body/categories.html">Categories</a>
+    <a href="/body/suggestion.html">Suggestion</a>
+  </div>
+</header>
+    <h1>SPINACH CARBONARA</h1><!-- Heading for the recipe -->
+    <div class="slideshow-container">
+        <img id="slide" width="500" height="300">
+    </div>
+    <script>
+        var p= 0;
+        var images= ['/body/picture/RENAL-FR/spinach-carbs-head1.jpg', '/body/picture/RENAL-FR/spinach-carbs-head2.jpg', '/body/picture/RENAL-FR/spinach-carbs-head3.jpg'];
+        var time= 4000;
+    
+    
+        function changeImg() {
+        var slide = document.getElementById('slide');
+        
+        slide.style.opacity = 0; // Set opacity to 0 for fade-out effect
+        
+        setTimeout(function() {
+          slide.src = images[p];
+          slide.style.opacity = 1; // Set opacity to 1 for fade-in effect
+        }, 300); // Adjust the duration as needed
+    
+        if (p < images.length - 1) {
+          p++;
+        } else {
+          p = 0;
+        }
+    
+        setTimeout(changeImg, time);
+      }
+    
+      window.onload = changeImg;
+    </script>
+    <div style="text-align:center">
+        <span class="dot1"></span> 
+        <span class="dot2"></span> 
+        <span class="dot3"></span> 
+      </div>
+
+<body>
+    <section id="spinach-description"><!-- Description of the dish -->
+        <p align="justify">
+            Spinach Carbonara is a lush, velvety dance of pasta and greens.
+            This indulgent yet health-conscious creation combines al dente pasta 
+            with a velvety carbonara sauce infused with fresh spinach. Beyond its 
+            rich taste, this dish offers a wealth of benefits. Spinach, a nutritional 
+            powerhouse, adds a dose of vitamins and antioxidants while contributing to
+            heart health. The protein from the eggs and the savory notes from Parmesan 
+            cheese create a satisfying and balanced meal. The Spinach Carbonara is a 
+            delectable journey where wholesome ingredients and delightful flavors come together, making it a tasty 
+            and nourishing choice for any occasion.It's a classic Italian 
+            indulgence with a healthy twist!   
+            </p>
+    </section>
+        <section id="spinach-ingredients">
+            <h4>INGREDIENTS:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+            <img src="/body/picture/RENAL-FR/spinach carbonara-2.jpg" class="ingredients">
+
+<!--List of the ingredients-->
+            <ul class="list-ingredients">
+                <li>8 oz spaghetti</li>
+                <li>2 cups fresh spinach</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>2 large eggs</li>
+                <li>Salt and pepper to taste</li>
+                <li>Olive oil for cooking</li>
+            </ul>
+        </section>  
+        <section id="spinach-procedures">
+            <h4>PROCEDURES:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+<!--Orderes list of the procedures-->
+            <ol align="justify">
+                <li>Cook the spaghetti in a large pot of salted boiling water until al dente. Drain and reserve 1/2 cup of pasta water.</li>
+                <li>In a large bowl, whisk together grated Parmesan cheese and eggs. Set aside.</li>
+                <li>In a skillet, heat olive oil over medium heat. Add minced garlic and sauté until fragrant.</li>
+                <li>Add fresh spinach to the skillet and cook until wilted.</li>
+                <li>Add cooked spaghetti to the skillet and toss to combine.</li>
+                <li>Remove the skillet from heat and quickly pour in the egg mixture. Toss vigorously to coat the pasta.</li>
+                <li>If the sauce is too thick, add reserved pasta water a little at a time until desired consistency is reached.</li>
+                <li>Season with salt and pepper to taste. Serve hot, garnished with extra Parmesan if desired.</li>
+            </ol>
+        </section>  
+                <div class="video">
+                    <video controls src = "/body/Videos/spinachCarbonara-video.mp4" width = "500" class="video-procedures"></video>
+                    <a href="https://youtu.be/Nz4bD2KxTg8?si=6-9J7ph9DVTkAIAt">&copy;The Clever Meal</a>
+            </div>
+        <section id="spincah-nutrition">
+            <h4>NUTRIENT FACTS:</h4>
+            <hr class="moving" size="10" color=" #664228;">
+            <!-- Table displaying nutrient facts for this recipe -->
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Calories</th>
+                    <td>&nbsp;180 kcal</td>
+                </tr>
+                <tr>
+                    <th>Carbohydrates</th>
+                    <td>&nbsp;12g</td>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <td>&nbsp;7g</td>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <td>14g</td>
+                </tr>
+                <tr>
+                    <th>Sodium</th>
+                    <td>310mg</td>
+                </tr>
+                <tr>
+                    <th>Sugar</th>
+                    <td>4g</td>
+                </tr>
+            </table>
+        </section>
+        <br> <br> <br> <br> <br> <br>
+        <!--CODE FOR EMOJI RATINGS-->
+        <form>
+            <h2><center>Rate this recipe and leave us a comment!</center> </h2>
+            <div class="rating">
+               <input type="radio" name="star" id="star1">
+               <label for="star1">★</label>
+               <input type="radio" name="star" id="star2">
+               <label for="star2">★</label>
+               <input type="radio" name="star" id="star3">
+               <label for="star3">★</label>
+               <input type="radio" name="star" id="star4">
+               <label for="star4">★</label>
+               <input type="radio" name="star" id="star5">
+               <label for="star5">★</label>
+             </div>
+             <input type="text" required placeholder="Enter your name" class="name-box">
+             <input type="email" placeholder="Enter your email" class="email-box">
+             <div class="comment">
+             <textarea class="opinion" rows="8" cols="53" placeholder="Write your comment......"></textarea>
+             </div>
+        <!--LINE OF CODE FROM SUBMIT BUTTON-->
+        <center><input type="submit" value="Submit" id="submit"></center> 
+      </form>
+      <div class="comment-1">
+        <p class="name">Kamil C.</p>
+        <p class="date">August 17, 2023</p>
+        <div class="star-rating-five">
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+      </div>
+      <p class="comment-ni-beh">Really good recipe! It's nice for an easy weeknight meal and you may
+         have everything you need on hand. We will definitely make this again.</p>
+    </div>
+    <div class="comment-next">
+        <p class="name">Jane A.</p>
+        <p class="date">September 11, 2023</p>
+        <div class="star-rating-five">
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+      </div>
+      <p class="comment-ni-beh">Yummy!! This is such a simple recipe but it is delicious. 
+        I have made it a couple of times now, and everyone loves it.</p>
+    </div>
+    <div class="comment-next">
+        <p class="name">Evan V.</p>
+        <p class="date">December 5, 2023</p>
+        <div class="star-rating-five">
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+          <label></label>
+      </div>
+      <p class="comment-ni-beh">Another great recipe! I omitted the eggs, as I always do for carbonaras 
+        (i know it's not technically a carbonara without them but i like it!) but other than that, made as posted. 
+        I loved it! I will make it again! Thanks for posting.</p>
+    </div>
+    <footer id="main-footer"> 
+        <img src="/body/LOGO.png" width="14%" class="logo-about"> 
+        <hr size="3px" color="#664229">
+        <div class="more">
+    <p class="left">Explore the diverse flavors of dishes with <b>WellPalate </b>— your online kitchen companion!</p>
+    </div>
+    <div class="middle">
+            <p><a class="foot-button" href="/index.html">Home</a> </p>
+            <p><a class="foot-button" href="/body/categories.html"> Categories</a></p>
+            <p><a class="foot-button" href="/body/suggestion.html"> Suggestion Form</a></p>
+    </div>
+    <div class="right">
+        <p>Contact us:</p>
+        <a href="#" class="fa fa-phone"></a><p class="pnumber">+63 935 756 0201</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+        </div>
+    </footer>
+        </body>
+        </html>

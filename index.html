@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellPalate</title>
+    <link rel="icon" type="image/png" href="/body/logo-icon1.png" />
+    <link rel="stylesheet" href="/body/style.css">
+    <link rel="stylesheet" href="index.css"><!--Used to link to external css files-->
+    <script src="/body/slideshow.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><!--Google fonts link-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- USED TO ADD NAVIGATION BARS THAT ARE LINKED TO OTHER PAGE. -->
+     <div class="homepage">
+            <img src="/body/LOGO.png" class="logo">
+            <ul class="homepage-ul">
+               <li><a href="/index.html" class="home-button">Home</a></li> 
+                <li><a href="/body/categories.html">Categories</a></li>
+                <li><a href="/body/suggestion.html">Suggestion</a></li>
+            </ul>
+        </div>    
+        <div class="Main">
+        <div class="description">
+            <!--Short description/introduction of the website-->
+            <p class="description-top">
+                Welcome to &nbsp;<b style="font-size: 35px; text-shadow: 3px 3px #D1E3B7;">WellPalate</b> your online
+                kitchen companion that promises to 
+                give you the easiest ways to cook! 
+                 We offer a 
+                collecttion of mouthwatering 
+                recipes that can fit your unique 
+                tastes and preferences. 
+                Regardless of your experience, 
+                we ensure that you can easily 
+                follow the procedures we've 
+                prepapred for you.  </p>
+            <!--Tagline of the website-->  
+            
+        </div>
+        <p class="description-bottom">
+                YOU'RE <br> 
+                MEANT <br>
+                TO COOK! <br>
+            </p>
+    </div>
+    <div class="ABOUT">
+    <div class= "about-us">
+    <p align="justify">Discover a one-stop culinary hub at <img src="/body/LOGO.png" width="14%" class="logo-about"> Explore a variety of recipes, from savory meats
+    to sweet desserts, refreshing salads, and health-focused options. Each recipe offers meticulously crafted 
+     lists of ingredients, step-by-step procedures, and comprehensive nutrition facts. The website not only serves as 
+     a recipe repository but also aims to empower users with nutritional information, helping them make informed 
+     choices about their meals. With a user-friendly interface, easy navigation, and a commitment to promoting both 
+     taste and wellness, WellPalate.com is the perfect digital companion for those seeking a balance between 
+     flavorful dining and a health-conscious lifestyle. Dive into a world of culinary creativity and nutritional 
+     wisdom at WellPalate – where every recipe tells a delicious, nutritious story! <b>🍮୧ ‧₊🥞₊ ⊹♨🍜♡˚ 🍙 ⋅</b>
+         </p>
+    </div>
+ <br>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="homepage-slides fade">
+      <img src="/body/picture/MEAT/Creamy-Garlic-Chicken-hp.jpg" style="width:100%">
+      <div class="des">Creamy Garlic Chicken</div>
+    </div>
+  
+    <div class="homepage-slides fade">
+      <img src="/body/picture/SALAD/tuna-hp.jpg" style="width:100%">
+      <div class="des">Tuna Salad</div>
+    </div>
+  
+    <div class="homepage-slides fade">
+      <img src="/body/picture/DESSERT/mango-float-head1.jpg" style="width:100%">
+      <div class="des">Mango Float</div>
+    </div>
+    <div class="homepage-slides fade">
+        <img src="/body/picture/RENAL-FR/avocado-hp.jpeg" style="width:100%">
+        <div class="des">Avocado Toast</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+   
+    <script>
+        document.addEventListener ("DOMContentLoaded", function() {
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("homepage-slides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        });
+    </script>
+
+    <!--Frequently asked questions section to inform users-->
+    <div class="faqs" style="padding-bottom: 80px;">
+    <h1 style="color: #664229;"><center>FAQS</center></h1>
+    <hr size="5" color="#66825D" style="width: 10%; align-items: center;">
+    <h4>Who is behind WellPalate?</h4>
+    <ul>
+        <li>WellPalate is curated by dedicated team of food enthusiast who aims to provide a platform
+            that features variety of recipes, ranging from savory treats to sweets, and healthy-recipes.
+            The team is committed to encouraging a balanced and thoughtful approach to food, consistently working 
+            to provide a variety of options that meet different tastes and dietary requirements.       
+    </ul>
+    <h4>Can I submit my own recipes or suggestions?</h4>
+    <ul>
+        <li> Yes, we welcome suggestions! If you have a favorite recipe, a dietary preference, or a specific 
+            health requirement you'd like us to cover, feel free to send us your ideas. We value your input and 
+            are always looking to enhance our collection based on your preferences. 
+            Simply contact us at <a class="mail" href="mailto:qiellkim@gmail.com">wellpalate@gmail.com</a> or submit a suggestion form, and let's create a culinary experience that suits your tastes and needs!</li>
+    </ul>
+    <h4>How often do you update the recipe collection?</h4>
+    <ul>
+        <li>We strive to keep things fresh and exciting at WellPalate.com! 
+            Our recipe collection is regularly updated to bring you new and delicious options.
+            As soon as we received your suggestions, we our doing our best to immediately update the list.
+            We also regularly update our recipe collection with new inspiring dishes. </li>
+    </ul>
+</div>
+   
+
+    <footer id="main-footer"> 
+        <img src="/body/LOGO.png" width="14%" class="logo-about"> 
+        <hr size="3px" color="#664229">
+        <div class="more">
+    <p class="left">Explore the diverse flavors of dishes with <b>WellPalate </b>— your online kitchen companion!</p>
+    </div>
+    <div class="middle">
+            <p><a class="foot-button" href="/index.html">Home</a> </p>
+            <p><a class="foot-button" href="/body/categories.html"> Categories</a></p>
+            <p><a class="foot-button" href="/body/suggestion.html"> Suggestion Form</a></p>
+    </div>
+    <div class="right">
+        <p>Contact us:</p>
+        <a href="#" class="fa fa-phone"></a><p class="pnumber">+63 935 756 0201</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+        </div>
+    </footer> 
+</div>
+</body>
+</html>

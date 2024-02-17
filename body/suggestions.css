@@ -1,0 +1,302 @@
+
+body{
+    background-color: rgba(250, 236, 215, 0.658);
+    margin: 0;
+    padding: 0;
+}
+/*Style the headings and subheadings*/
+h1{
+    font-family: Libre Baskerville;
+    font-size: 50px;
+    letter-spacing: 15px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    color: #664229;
+    text-align: center;
+}
+.descri{
+    font-family: Montserrat;
+    line-height: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+}
+/*To style the form and boxes*/
+form{
+    font-family: Montserrat;
+    font-size: 25px;   
+    color: black; 
+    margin-bottom: 0;
+    margin-top: 30px;
+    
+}
+.container-form{
+  height: auto;
+  margin: auto;
+  margin-top: -50px;
+  max-width: 750px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 11px 10px rgba(33,33,33,.2); 
+  box-sizing: border-box;
+}
+.email-box{
+    width: 40%;
+    height: 25px;
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: none;
+    padding: .8%;
+    border-radius: 20px;
+}
+
+.name-box{
+  width: 40%;
+  height: 25px;
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: none;
+    padding: .8%;
+    border-radius: 20px;
+}
+select{
+  width: 52%;
+    height: 35px;
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: none;
+    padding: .8%;
+    border-radius: 20px;
+}
+.dish-box{
+  width: 37%;
+  height: 25px;
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: none;
+    padding: .8%;
+    border-radius: 20px;
+}
+textarea{
+    background-color: hsla(113, 27%, 54%, 0.247);
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    text-indent: 15px;
+}
+/* Styling for topnav and its links */
+.topnav a.home{
+  margin-left: 100px;
+}
+.topnav a.suggestion{
+    background-color: #664229;
+}
+.topnav a.suggestion:hover{
+    background-color: #664229;
+}
+.logo{
+    width: 60%;
+    margin-top: -10px;
+    margin-right: 500px;
+}
+.topnav a.logo-link{
+    margin-top: 0;
+    margin-right: 350px;
+    background-color: transparent;
+}
+.topnav a.logo-link:hover{
+    background-color: transparent;
+}
+.topnav{
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    margin-left: auto;
+    background-color:hsla(113, 27%, 54%, 0.247);
+    padding-bottom: 15px;
+    padding-top: 0;
+    
+}
+.topnav a {
+    background-color: #66825D;
+    border-radius: 50px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 5%;
+    font-family: Libre Baskerville;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #664229;
+    color: white;
+
+  }
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /*To style the submit and reset buttons*/
+ 
+input[type=reset]{
+  background-color: #664229;
+  color: white;
+  padding: 10px;
+  font-family: Montserrat;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+
+  
+}
+.input-group{
+  margin-top: -35px;
+  margin-left: 250px;
+
+}
+input[type=reset]:hover {
+  filter: brightness(1.5);
+  background-color: #66825D;
+}
+
+input[type="file"] {
+  background-color: hsla(113, 27%, 54%, 0.247);
+  border-radius: 20px;
+  width: 57%;
+ 
+}
+
+button[type="button"]{
+    color: white;
+    background-color: #664229;
+}
+button[type="button"]:hover{
+  filter: brightness(1.5);
+  background-color: #66825D;
+}
+.btn{
+  background-color: #664229;
+  color: white;
+  padding: 10px;
+  font-family: Montserrat;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+  }
+  
+  .btn:hover{
+    filter: brightness(1.5);
+    background-color: #66825D
+  
+  }
+  
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+   
+    background: #664229;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+   
+  }
+  input[type=file]::file-selector-button:hover {
+    background: #66825D;
+  }
+#main-footer{
+  background-color: hsla(113, 27%, 54%, 0.247);
+  padding: 50px;
+  padding-bottom: 30px;
+  margin-top: 90px;
+    }
+    .fa{
+      padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    
+    }
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      
+      background: #3B5998;
+      color: white;
+      width: 20px;
+      height: 15px;
+    }
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      width: 20px;
+      height: 15px;
+    }
+    .fa-envelope{
+      background: red;
+      color: white;
+      width: 20px;
+      height: 15px;
+    }
+    .fa-instagram{
+      background: #cd486bbd ;
+      color: white;
+      width: 20px;
+      height: 15px;
+    }
+    .fa-phone{
+      
+      color:#4C6444;
+      width: 40px;
+      height: 30px;
+      margin-left: 15px;
+      margin-top: -20px;
+    }
+    .logo-about{
+      margin-top: -30px; 
+    }
+    
+    .left{
+      padding-right: 1050px;
+      margin-top: 25px;
+      margin-left: 20px;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: justify;
+      font-family: Libre Baskerville;
+    }
+    .middle{
+      margin-top: -60px;
+      text-align: center;
+      font-size: 15px;
+      font-family: Libre Baskerville;
+    }
+    .right{
+      padding-left: 1150px;
+      margin-top: -110px;
+      font-size: 15px;
+      font-family: Libre Baskerville;
+      line-height: 50px;
+    }
+    .foot-button{
+      text-decoration: none;
+      color: black;
+    }
+    .foot-button:hover{
+      color: #6642296b;
+    }
+    .pnumber{
+      margin-top: -50px;
+      margin-left: 80px;
+    }
